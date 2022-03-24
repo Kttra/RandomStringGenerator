@@ -8,7 +8,8 @@ using System.Linq;
 public class Program
 {
 	public static void Main()
-	{   //Create random string filled with numbers/letters
+	{   	
+		//Create random string filled with numbers/letters
 		Console.Write("Enter how long you want the string to be (consists of numbers): ");
 		int num = Convert.ToInt32(Console.ReadLine());
 		Console.WriteLine("The random string generated is: " + randomString(num));
@@ -27,8 +28,6 @@ public class Program
 		Console.Write("Enter how long you want the string to be (only numbers): ");
 		num = Convert.ToInt32(Console.ReadLine());
 		Console.WriteLine("The random string generated is: " + randomNumbers(num));
-
-
 	}
 	private static Random random = new Random();
 	//Generate fully random string with letters & numbers
